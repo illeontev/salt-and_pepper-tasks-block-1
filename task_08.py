@@ -1,4 +1,7 @@
-def multiply_numbers(inputs):
+def multiply_numbers(inputs=None):
+    if inputs is None:
+        return None
+
     """возвращает произведение цифр, входящих в inputs."""
     digits = [digit for digit in str(inputs) if digit.isdigit()]
 
@@ -11,6 +14,7 @@ def multiply_numbers(inputs):
     return res
 
 
+print(multiply_numbers())
 print(multiply_numbers('ss')) # => None
 print(multiply_numbers('1234')) # => 24
 print(multiply_numbers('sssdd34')) # => 12
