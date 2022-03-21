@@ -20,6 +20,6 @@ if __name__ == '__main__':
     print(jelly_bean.is_healthy()) # True
     print(jelly_bean.is_delicious()) # True
 
-    jelly_bean = JellyBean('JB1', 250, 'black licorice')
+    jelly_bean = JellyBean('JB1', 5.45, 'black licorice')
     print(jelly_bean.is_healthy()) # False
     print(jelly_bean.is_delicious()) # False
