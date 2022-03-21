@@ -15,15 +15,16 @@ class Dessert:
         """возвращает True для всех десертов"""
         return True
 
+# этот файл импортируется в task_12.py, поэтому ставим такую защиту
+if __name__ == '__main__':
+    cake = Dessert('cake', 250)
+    apple = Dessert('apple', 150)
+    none = Dessert()
 
-cake = Dessert('cake', 250)
-apple = Dessert('apple', 150)
-none = Dessert()
+    print(cake.is_healthy())  # False
+    print(apple.is_healthy())  # True
+    print(none.is_healthy())  # False
 
-print(cake.is_healthy())  # False
-print(apple.is_healthy())  # True
-print(none.is_healthy())  # False
-
-print(cake.is_delicious())  # True
-print(apple.is_delicious())  # True
-print(none.is_delicious())  # True
+    print(cake.is_delicious())  # True
+    print(apple.is_delicious())  # True
+    print(none.is_delicious())  # True
